@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <style>
+            h1{
+                text-align: center;
+                margin-top: 50px;
+            }
+            #icecream{
+                float: left;
+                margin-top: 100px;
+                margin-left: 400px;
+            }
+            #pizza{
+                float: right;
+                margin-top: 100px;
+                margin-right: 400px;
+            }
+            h3{
+                margin-left: 50PX;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Make your order &#128512;</h1>
+        <div id="icecream">
+        <a href="{% url 'selecticecreams'  %}"><img src="{% static 'images/main_icecream_image.jpeg' %}" alt="" height="200px" width="200px"></a>
+        <h3>Icecreams</h3>
+    </div>
+    <div id="pizza">
+        <a href="{% url 'selectpizzaurl'  %}"><img src="{% static 'images/pizza_main_image.jpeg' %}" alt="" height="200px" width="200px"></a>
+        <h3>Pizzas</h3>
+    </div>
+    
+    </body>
+</html>
